@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #101010;
+  --color-secondary: #f59e0b;
+  --color-button-one: #d87d4a;
+  --color-bhover-one: #f59e0b;
+  --color-button-two: #fbaf85;
+  --color-secondary: #f59e0b;
+  --color-accent: #10b981;
+}
+
+@layer components {
+  .card {
+    @apply w-[327px] h-[165px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-earphone {
+    @apply w-[327px] h-[200px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-earphone-two {
+    @apply w-[540px] h-[320px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-earphone-three {
+    @apply w-[339px] h-[320px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-headphone-one {
+    @apply w-[327px] h-[352px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-speaker {
+    @apply w-[327px] h-[600px] bg-[#d87d4a] rounded-lg flex flex-col items-center mt-[120px] justify-center relative overflow-hidden;
+  }
+  .card-speaker-desktop {
+    @apply w-[1110px] h-[560px] bg-[#d87d4a] rounded-lg flex flex-row items-center mt-[168px] justify-center relative overflow-hidden;
+  }
+  .card-speaker-tablet {
+    @apply w-[689px] h-[720px] bg-[#d87d4a] rounded-lg flex flex-row items-center mt-[168px] justify-center relative overflow-hidden;
+  }
+}
+
+@layer utilities {
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-slide-down {
+    animation: slide-down 0.3s ease-out;
+  }
+}
+
+:root {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  @apply antialiased;
+  font-family: inherit;
+}
