@@ -8,8 +8,8 @@ function Footer() {
   return (
     <>
       {/* DESKTOP VIEW */}
-      <div className="hidden md:hidden bg-black text-white justify-start items-start">
-        <div className="w-[101px] h-1 bg-button-one" />
+      <div className="relative hidden md:hidden lg:block bg-black text-white justify-start items-start">
+        <div className="w-[101px] h-1 bg-button-one absolute top-0 left-[14%]" />
         <div className="mt-[72px] flex flex-row justify-between items-start p-4">
           <div className="flex flex-col text-start ml-[165px]">
             <h1 className="text-2xl font-bold">audiophile</h1>

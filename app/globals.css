@@ -27,6 +27,9 @@
   .card-headphone-one {
     @apply w-[327px] h-[352px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
   }
+  .card-headphone-two {
+    @apply w-[689px] h-[352px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
   .card-speaker {
     @apply w-[327px] h-[600px] bg-[#d87d4a] rounded-lg flex flex-col items-center mt-[120px] justify-center relative overflow-hidden;
   }

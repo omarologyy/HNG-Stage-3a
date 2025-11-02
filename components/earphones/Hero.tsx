@@ -2,9 +2,22 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="bg-black text-white justify-center text-center">
-      <h1 className="text-2xl py-8">EARPHONES</h1>
-    </div>
+    <>
+      {/* Mobile View */}
+      <div className="block md:hidden bg-black text-white text-center py-8">
+        <h1 className="text-lg">EARPHONES</h1>
+      </div>
+
+      {/* Tablet View */}
+      <div className="hidden md:block lg:hidden bg-black text-white text-center py-8">
+        <h1 className="text-xl">EARPHONES</h1>
+      </div>
+
+      {/* Desktop View */}
+      <div className="hidden md:hidden lg:block bg-black text-white text-center py-8">
+        <h1 className="text-2xl">EARPHONES</h1>
+      </div>
+    </>
   );
 }
 
