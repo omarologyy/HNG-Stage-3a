@@ -42,12 +42,12 @@ export default function CheckoutPage() {
     return regex.test(email);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name;
     const value = e.target.value;
     setFormData((prev) => ({ ...prev, [name]: value }));
 
-    if (errors[name]) {
+    if (errors[name as keyof typeof errors]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
 
