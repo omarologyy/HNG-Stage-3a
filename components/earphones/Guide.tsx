@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import EarPhonesMobile from "@/public/images/earphoneImgs/Earphone.svg";
 import EarPhonesHP from "@/public/images/earphoneImgs/EarphoneDesktop.svg";
 import EarPhonesTab from "@/public/images/earphoneImgs/EarphoneTablet.svg";
+import { useRouter } from "next/navigation";
 
 function Guide() {
+  const router = useRouter();
+
+  // navigation helper
+  const navigateTo = (path: string) => {
+    router.push(path);
+  };
   return (
     <>
       {/* DESKTOP VIEW */}
@@ -39,7 +47,10 @@ function Guide() {
               <span>noise cancellation feature.</span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/earphones/earbud")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               {" "}
               SEE PRODUCT{" "}
             </button>
@@ -81,7 +92,10 @@ function Guide() {
               </span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/earphones/earbud")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -116,7 +130,10 @@ function Guide() {
               <br />
               <span>active noise cancellation feature.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/earphones/earbud")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>

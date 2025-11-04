@@ -19,7 +19,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-primary/70 backdrop-blur-md">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-primary backdrop-blur-md">
       {/* DESKTOP VIEW */}
       <div className="hidden lg:flex flex-row justify-between items-center text-white p-6 px-30">
         <h1

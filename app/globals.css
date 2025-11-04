@@ -27,11 +27,38 @@
   .card-headphone-one {
     @apply w-[327px] h-[352px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
   }
+  .card-product-headphone {
+    @apply w-[281px] h-[480px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
   .card-headphone-two {
     @apply w-[689px] h-[352px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
   }
-  .card-speaker {
-    @apply w-[327px] h-[600px] bg-[#d87d4a] rounded-lg flex flex-col items-center mt-[120px] justify-center relative overflow-hidden;
+  .card-headphone-cart-one {
+    @apply w-[120px] h-[48px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-headphone-cart-two {
+    @apply w-[160px] h-[48px] bg-[#d87d4a] hover:bg-button-two flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-product {
+    @apply w-[160px] h-[48px] bg-[#d87d4a] hover:bg-button-two rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-speaker-product {
+    @apply w-[327px] h-[120px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-speaker-product-desktop {
+    @apply w-[350px] h-[318px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-checkout-mobile {
+    @apply w-[327px] h-[1378px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-checkout-desktop {
+    @apply w-[730px] h-[1126px] bg-[#F1F1F1] rounded-lg relative overflow-hidden;
+  }
+  .card-speaker-product-tablet {
+    @apply w-[281px] h-[480px] bg-[#F1F1F1] rounded-lg flex flex-col items-center justify-center relative overflow-hidden;
+  }
+  .card-speaker-product-detail {
+    @apply w-[327px] h-[120px] bg-[#F1F1F1] rounded-lg flex flex-col items-center mt-[120px] justify-center relative overflow-hidden;
   }
   .card-speaker-desktop {
     @apply w-[1110px] h-[560px] bg-[#d87d4a] rounded-lg flex flex-row items-center mt-[168px] justify-center relative overflow-hidden;

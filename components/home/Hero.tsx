@@ -1,6 +1,14 @@
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Hero() {
+  const router = useRouter();
+
+  // navigation helper
+  const navigateTo = (path: string) => {
+    router.push(path);
+  };
   return (
     <>
       {/* DESKTOP VIEW*/}
@@ -20,7 +28,10 @@ export default function Hero() {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+          <button
+            onClick={() => navigateTo("/headphones/markone")}
+            className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+          >
             SEE PRODUCT
           </button>
         </div>
@@ -43,7 +54,10 @@ export default function Hero() {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+          <button
+            onClick={() => navigateTo("/headphones/markone")}
+            className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+          >
             SEE PRODUCT
           </button>
         </div>
@@ -66,7 +80,10 @@ export default function Hero() {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+          <button
+            onClick={() => navigateTo("/headphones/markone")}
+            className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+          >
             SEE PRODUCT
           </button>
         </div>

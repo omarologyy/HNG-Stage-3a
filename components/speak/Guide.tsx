@@ -1,9 +1,17 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Speak from "@/public/images/speakerImgs/SpSvg.svg";
 import ZSpeaker from "@/public/images/speakerImgs/ZSpeak.svg";
+import { useRouter } from "next/navigation";
 
 function Guide() {
+  const router = useRouter();
+
+  // navigation helper
+  const navigateTo = (path: string) => {
+    router.push(path);
+  };
   return (
     <>
       {/* DESKTOP VIEW */}
@@ -37,7 +45,10 @@ function Guide() {
               </span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/speakers/speakerone")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               {" "}
               SEE PRODUCT{" "}
             </button>
@@ -68,7 +79,10 @@ function Guide() {
               <br />
               <span>studio use.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/speakers/speakertwo")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               {" "}
               SEE PRODUCT{" "}
             </button>
@@ -115,7 +129,10 @@ function Guide() {
               <span>for more pleasing and practical audio setups.</span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/speakers/speakerone")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -150,7 +167,10 @@ function Guide() {
               <span>powered speakers for home or studio use.</span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/speakers/speakertwo")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -185,7 +205,10 @@ function Guide() {
               <br />
               <span>and practical audio setups.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/speakers/speakerone")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -217,7 +240,10 @@ function Guide() {
               <br />
               <span>speakers for home or studio use.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/speakers/speakertwo")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>

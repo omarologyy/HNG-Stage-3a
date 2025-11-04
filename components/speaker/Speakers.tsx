@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Speaker from "@/public/images/speakers.svg";
 import SpeakerTwo from "@/public/images/SpeakerTwo.jpg";
@@ -10,8 +11,15 @@ import Grey from "@/public/images/GreyTablet.jpg";
 import Earbuds from "@/public/images/EarbudsDesktop.jpg";
 import Tablet from "@/public/images/TabletEarbuds.jpg";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function Speakers() {
+  const router = useRouter();
+
+  // navigation helper
+  const navigateTo = (path: string) => {
+    router.push(path);
+  };
   return (
     <>
       {/* DESKTOP VIEW */}
@@ -48,7 +56,10 @@ function Speakers() {
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <button className="bg-black text-white px-8 py-4 font-bold tracking-widest border-2 border-black hover:bg-white hover:text-black transition uppercase text-sm">
+              <button
+                onClick={() => navigateTo("/speakers/speakerone")}
+                className="bg-black text-white px-8 py-4 font-bold tracking-widest border-2 border-black hover:bg-white hover:text-black transition uppercase text-sm"
+              >
                 SEE PRODUCT
               </button>
             </div>
@@ -60,7 +71,10 @@ function Speakers() {
           <Image src={SpeakerTwo} alt="Zx7 Speaker" />
           <div className="absolute justify-start items-start text-start space-y-8 mr-[800px]">
             <h1 className="font-bold text-2xl">ZX7 SPEAKER</h1>
-            <button className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center">
+            <button
+              onClick={() => navigateTo("/speakers/speakertwo")}
+              className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -72,7 +86,10 @@ function Speakers() {
           <div className="flex flex-col card-earphone-two justify-center items-center text-start">
             <div className="mr-[99px] space-y-8">
               <h1 className="font-bold text-2xl">YX1 EARPHONES</h1>
-              <button className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center">
+              <button
+                onClick={() => navigateTo("/earphones/earbud")}
+                className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center"
+              >
                 SEE PRODUCT
               </button>
             </div>
@@ -113,7 +130,10 @@ function Speakers() {
             <br />
             <span>remarkable sound.</span>
           </p>
-          <button className="bg-white text-black px-4 py-4 font-bold tracking-wider border-2 hover:text-white hover:bg-black transition absolute bottom-[30px] left-1/2 -translate-x-1/2 text-center">
+          <button
+            onClick={() => navigateTo("/speakers/speakerone")}
+            className="bg-white text-black px-4 py-4 font-bold tracking-wider border-2 hover:text-white hover:bg-black transition absolute bottom-[30px] left-1/2 -translate-x-1/2 text-center"
+          >
             SEE PRODUCT
           </button>
         </div>
@@ -122,7 +142,10 @@ function Speakers() {
           <Image src={Grey} alt="Zx7 Speaker" />
           <div className="absolute justify-start items-start text-start space-y-8 mr-24">
             <h1 className="font-bold text-2xl">ZX7 SPEAKER</h1>
-            <button className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center">
+            <button
+              onClick={() => navigateTo("/speakers/speakertwo")}
+              className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -133,7 +156,10 @@ function Speakers() {
           <div className="flex flex-row card-earphone-three justify-center items-center text-start">
             <div className="mr-[99px] space-y-8">
               <h1 className="font-bold text-2xl">YX1 EARPHONES</h1>
-              <button className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center">
+              <button
+                onClick={() => navigateTo("/earphones/earbud")}
+                className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center"
+              >
                 SEE PRODUCT
               </button>
             </div>
@@ -174,7 +200,10 @@ function Speakers() {
             <br />
             <span>remarkable sound.</span>
           </p>
-          <button className="bg-white text-black px-4 py-4 font-bold tracking-wider border-2 hover:text-white hover:bg-black transition absolute bottom-[30px] left-1/2 -translate-x-1/2 text-center">
+          <button
+            onClick={() => navigateTo("/speakers/speakerone")}
+            className="bg-white text-black px-4 py-4 font-bold tracking-wider border-2 hover:text-white hover:bg-black transition absolute bottom-[30px] left-1/2 -translate-x-1/2 text-center"
+          >
             SEE PRODUCT
           </button>
         </div>
@@ -183,7 +212,10 @@ function Speakers() {
           <Image src={Zx7Speaker} alt="Zx7 Speaker" />
           <div className="absolute justify-start items-start text-start space-y-8 mr-24">
             <h1 className="font-bold text-2xl">ZX7 SPEAKER</h1>
-            <button className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center">
+            <button
+              onClick={() => navigateTo("/speakers/speakertwo")}
+              className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -193,7 +225,10 @@ function Speakers() {
         <div className="flex flex-col card-earphone justify-center items-center text-start">
           <div className="mr-[99px] space-y-8">
             <h1 className="font-bold text-2xl">YX1 EARPHONES</h1>
-            <button className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center">
+            <button
+              onClick={() => navigateTo("/earphones/earbud")}
+              className="bg-transparent border-2 text-black px-4 py-4 font-bold tracking-wider hover:bg-black hover:text-white text-center"
+            >
               SEE PRODUCT
             </button>
           </div>

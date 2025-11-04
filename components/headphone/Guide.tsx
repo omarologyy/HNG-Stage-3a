@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Black from "@/public/images/headphoneImgs/BlackSvg.svg";
 import Mark from "@/public/images/headphoneImgs/MarkSvg.svg";
 import FiftyNine from "@/public/images/headphoneImgs/FiftyNineSvg.svg";
+import { useRouter } from "next/navigation";
 
 function Guide() {
+  const router = useRouter();
+
+  // navigation helper
+  const navigateTo = (path: string) => {
+    router.push(path);
+  };
   return (
     <>
       {/* DESKTOP VIEW */}
@@ -30,7 +38,10 @@ function Guide() {
               It redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/markone")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               {" "}
               SEE PRODUCT{" "}
             </button>
@@ -52,7 +63,10 @@ function Guide() {
               mixing engineers, and music aficionados alike in studios and on
               the go.
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/marktwo")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               {" "}
               SEE PRODUCT{" "}
             </button>
@@ -87,7 +101,10 @@ function Guide() {
               tastes with the XX59 headphones. The stylish yet durable versatile
               wireless headset is a brilliant companion at home or on the move.
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("headphones/markthree")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               {" "}
               SEE PRODUCT{" "}
             </button>
@@ -125,7 +142,10 @@ function Guide() {
               <span className="block">precision of studio-quality sound.</span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/markone")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -160,7 +180,10 @@ function Guide() {
               </span>
             </p>
 
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/marktwo")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -194,7 +217,10 @@ function Guide() {
                 brilliant companion at home or on the move.
               </span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/markthree")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -229,7 +255,10 @@ function Guide() {
               <br />
               <span>of studio-quality sound.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/markone")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -261,7 +290,10 @@ function Guide() {
               <br />
               <span>in studios and on the go.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/marktwo")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
@@ -293,7 +325,10 @@ function Guide() {
               <br />
               <span>companion at home or on the move.</span>
             </p>
-            <button className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide">
+            <button
+              onClick={() => navigateTo("/headphones/markthree")}
+              className="bg-button-one hover:bg-button-two transition-colors text-white font-semibold px-8 py-3 tracking-wide"
+            >
               SEE PRODUCT
             </button>
           </div>
