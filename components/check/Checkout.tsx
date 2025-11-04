@@ -37,7 +37,7 @@ export default function CheckoutPage() {
   const vat = Math.round(total * 0.2);
   const grandTotal = total + shipping;
 
-  const validateEmail = (email) => {
+  const validateEmail = (email: string): boolean => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
